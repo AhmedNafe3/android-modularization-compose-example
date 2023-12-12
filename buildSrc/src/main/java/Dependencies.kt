@@ -170,6 +170,7 @@ fun DependencyHandler.retrofit() {
 }
 
 fun DependencyHandler.compose() {
+    implementation(Compose.composeActivity)
     implementation(platform(Compose.composeBom))
     implementation(Compose.composeUi)
     implementation(Compose.composeRuntime)
@@ -178,6 +179,7 @@ fun DependencyHandler.compose() {
     implementation(Compose.composeMaterial3)
     implementation(Compose.composeLifecycle)
     debugImplementation(Compose.composeUiToolingPreview)
+    debugImplementation(Compose.manifestTest)
 }
 fun DependencyHandler.coil(){
     implementation(Compose.coil)
